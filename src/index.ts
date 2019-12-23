@@ -116,7 +116,7 @@ class OppoRequest extends AbstractSDKRequest {
       });
     });
   }
-  public upload(options: IUploadRequestOptions): Promise < ResponseObject > {
+  public upload(options: IUploadRequestOptions): Promise<ResponseObject> {
     return new Promise(async resolve => {
       const {
         url,
@@ -172,7 +172,7 @@ class OppoRequest extends AbstractSDKRequest {
           try {
             // 上传post请求返回数据格式为xml，此处容错
             result.data = JSON.parse(ajax.responseText);
-          } catch (e) {}
+          } catch (e) { }
 
           resolve(result);
         }
@@ -193,7 +193,12 @@ function genAdapter() {
   };
   return adapter;
 }
-export {
+
+const adapter = {
+  genAdapter,
   isMatch,
-  genAdapter
+  runtime: 'oppo_game'
+}
+export {
+  adapter
 };
