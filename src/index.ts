@@ -202,6 +202,7 @@ const adapter = {
 
 try {
   window['tcbAdapterOppoGame'] = adapter;
+  window['adapter'] = adapter;
 }catch(e){}
 
 export {
