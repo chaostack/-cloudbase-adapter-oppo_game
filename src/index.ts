@@ -199,6 +199,11 @@ const adapter = {
   isMatch,
   runtime: 'oppo_game'
 }
+
+try {
+  window['tcbAdapterOppoGame'] = adapter;
+}catch(e){}
+
 export {
   adapter
 };
