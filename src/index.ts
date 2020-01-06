@@ -207,3 +207,5 @@ try {
 export {
   adapter
 };
+
+export default adapter;
