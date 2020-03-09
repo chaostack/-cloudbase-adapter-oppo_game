@@ -175,7 +175,7 @@ class OppoRequest extends AbstractSDKRequest {
       timer = self._setTimeout('upload',task);
     });
   }
-  protected _request(options: IRequestOptions, enableAbort: boolean = false): Promise<ResponseObject> {
+  protected _request(options: IRequestOptions, enableAbort = false): Promise<ResponseObject> {
     const self = this;
     const method = (String(options.method)).toLowerCase() || 'get';
     return new Promise(resolve => {

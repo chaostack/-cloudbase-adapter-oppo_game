@@ -1,20 +1,25 @@
-## @cloudbase/adapter-oppo_game
+## cloudbase-adapter-oppo_game
 
-[![NPM Version](https://img.shields.io/npm/v/@cloudbase/adapter-oppo_game.svg?style=flat)](https://www.npmjs.com/package/@cloudbase/adapter-oppo_game)
-[![](https://img.shields.io/npm/dt/@cloudbase/adapter-oppo_game.svg)](https://www.npmjs.com/package/@cloudbase/adapter-oppo_game)
+[![NPM Version](https://img.shields.io/npm/v/cloudbase-adapter-oppo_game.svg?style=flat)](https://www.npmjs.com/package/cloudbase-adapter-oppo_game)
+[![](https://img.shields.io/npm/dt/cloudbase-adapter-oppo_game.svg)](https://www.npmjs.com/package/cloudbase-adapter-oppo_game)
 
 tcb-js-sdk Oppo小游戏适配器
 
 ## 安装
+### npm
 ```bash
-npm i @cloudbase/adapter-oppo_game -S
+npm i cloudbase-adapter-oppo_game -S
 ```
+
+### Unpkg
+可以使用unpkg托管的js文件，地址如下：
+https://unpkg.com/cloudbase-adapter-oppo_game/dist/index.js
 
 ## 使用
 ### ES Module
 ```javascript
 import tcb from 'tsb-js-sdk';
-import adapter from '@cloudbase/adapter-oppo_game';
+import adapter from 'cloudbase-adapter-oppo_game';
 
 // 以下两种方式二选一
 // 1.单参数传入
@@ -28,7 +33,7 @@ tcb.init();
 ### CommonJS
 ```javascript
 const tcb = require('tsb-js-sdk');
-const {adapter} = require('@cloudbase/adapter-oppo_game');
+const {adapter} = require('cloudbase-adapter-oppo_game');
 
 // 以下两种方式二选一
 // 1.单参数传入
